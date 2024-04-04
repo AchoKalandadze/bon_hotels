@@ -13,7 +13,7 @@
     <header class="header" id="header">
         <div class="container">
             <div class="header-flex">
-                <img src="/assets/images/Logo.svg" alt="Logo">
+                <img src="./assets/images/Logo.svg" alt="Logo">
                 <nav>
                     <ul class="navigation">
                         <li><a href="#first-section" class="nav-link">Our Hotel</a></li>
@@ -85,7 +85,7 @@
         <div class="footer-container">
             <div class="footer-content">
                 <a href="/index.html">
-                    <img src="/assets/images/footer-logo.svg" alt="footer-logo">
+                    <img src="./assets/images/footer-logo.svg" alt="footer-logo">
                 </a>
                 <nav>
                     <ul class="footer-navigation">
