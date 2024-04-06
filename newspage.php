@@ -13,12 +13,12 @@
     <header class="header" id="header">
         <div class="container">
             <div class="header-flex">
-                <img src="/assets/images/Logo.svg" alt="Logo">
+                <img src="./assets/images/Logo.svg" alt="Logo">
                 <nav>
                     <ul class="navigation">
-                        <li><a href="index.html#first-section" class="nav-link">Our Hotel</a></li>
-                        <li><a href="index.html#second-section" class="nav-link">Rooms & Rates</a></li>
-                        <li><a href="index.html#third-section" class="nav-link">Facilities</a></li>
+                        <li><a href="./index.php#first-section" class="nav-link">Our Hotel</a></li>
+                        <li><a href="./index.php#second-section" class="nav-link">Rooms & Rates</a></li>
+                        <li><a href="./index.php#third-section" class="nav-link">Facilities</a></li>
                         <li><a href="#" class="nav-link">Contact Us</a></li>
                     </ul>
                 </nav>
@@ -69,10 +69,10 @@
             <div class="container">
                 <h2 class="secondary-title">Gallery</h2>
                 <div class="gallery-grid">
-                    <img src="/assets/news-page/img-4.png" alt="Gallery IMG">
-                    <img src="/assets/news-page/img-2.jpg" alt="Gallery IMG">
-                    <img src="/assets/news-page/img-3.jpg" alt="Gallery IMG">
-                    <img src="/assets/news-page/img-1.jpg" alt="Gallery IMG">
+                    <img src="./assets/news-page/img-4.png" alt="Gallery IMG">
+                    <img src="./assets/news-page/img-2.jpg" alt="Gallery IMG">
+                    <img src="./assets/news-page/img-3.jpg" alt="Gallery IMG">
+                    <img src="./assets/news-page/img-1.jpg" alt="Gallery IMG">
                 </div>
             </div>
         </section>
@@ -81,8 +81,8 @@
     <footer>
         <div class="footer-container">
             <div class="footer-content">
-                <a href="/index.html">
-                    <img src="/assets/images/footer-logo.svg" alt="footer-logo">
+                <a href="./index.html">
+                    <img src="./assets/images/footer-logo.svg" alt="footer-logo">
                 </a>
                 <nav>
                     <ul class="footer-navigation">
