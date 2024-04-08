@@ -34,7 +34,7 @@ html{
 
 
 #first-section {
-    /* background-image: url(./assets/images/output.jpg); */
+    background-image: url(./assets/images/output.jpg);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
