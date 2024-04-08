@@ -33,7 +33,7 @@ html{
 }
 
 
-#first-section {
+.first-section {
     background-image: url(./assets/images/output.jpg);
     height: 100vh;
     background-repeat: no-repeat;
@@ -74,7 +74,8 @@ html{
 .footer-text p,
 .footer-nav-link,
 .nav-link,
-.description {
+.description,
+{
     font-family: Ubuntu,sans-serif;
     font-size: 24px;
     font-weight: 500;
@@ -309,4 +310,14 @@ footer{
 .news-first-section h2,
 .news-second-section h2{
     margin-bottom: 68px;
+}
+
+.inside-nav {
+    list-style: none;
+    display: none;
+    position: absolute;
+}
+
+.our-hotel:hover .inside-nav{
+    display: block;
 }
