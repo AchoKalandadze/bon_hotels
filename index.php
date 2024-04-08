@@ -17,10 +17,32 @@
                 <img src="./assets/images/Logo.svg" alt="Logo">
                 <nav>
                     <ul class="navigation">
-                        <li><a href="#first-section" class="nav-link">Our Hotel</a></li>
+                        <?php 
+                        foreach($headerNavContents as $elem){
+                            echo '<li class="our-hotel"><a href=" '.$elem['link'] . ' " class="nav-link"> '.$elem['text'] . ' </a>
+                            <nav>
+                                <ul class="inside-nav" id="inside-nav">';
+                            foreach ($elem['nav'] as $elem1){
+                                echo '<li><a href="#" class="nav-link">'.$elem1.'</a></li>';
+
+                            }
+                            echo '</ul>
+                            </nav>
+                        </li>' ;
+                        }
+                        ?>
+                        <!-- <li class="our-hotel"><a href="#first-section" class="nav-link">Our Hotel</a>
+                            <nav>
+                                <ul class="inside-nav" id="inside-nav">
+                                    <li><a href="#" class="nav-link">elem 1</a></li>
+                                    <li><a href="#" class="nav-link">elem 2</a></li>
+                                    <li><a href="#" class="nav-link">elem 3</a></li>
+                                </ul>
+                            </nav>
+                        </li>
                         <li><a href="#second-section" class="nav-link">Rooms & Rates</a></li>
                         <li><a href="#third-section" class="nav-link">Facilities</a></li>
-                        <li><a href="./newspage.php" class="nav-link">Contact Us</a></li>
+                        <li><a href="./newspage.php" class="nav-link">Contact Us</a></li> -->
                     </ul>
                 </nav>
             </div>
@@ -38,14 +60,14 @@
             <div class="container">
                 <h2 class="secondary-title">Rooms & Rates</h2>
                 <div class="rooms-gallery">
-                    <?php for($i=0;$i<sizeof($variable);$i++){
+                    <?php foreach($variables as $variable){
                     
                          echo '<div class="card">
-                            <img src="' . $variable[$i]['img'] . '" alt="' . $variable[$i]['img_alt'] . '">
+                            <img src="' . $variable['img'] . '" alt="' . $variable['img_alt'] . '">
                             <div class="overlay"></div>
                             <div class="card-content">
-                                <h3 class="card-title">' . $variable[$i]['card-title'] .  '</h3>
-                                <a href="#" class="button button-small">'. $variable[$i]['button-small'] . '</a>
+                                <h3 class="card-title">' . $variable['card-title'] .  '</h3>
+                                <a href="#" class="button button-small">'. $variable['button-small'] . '</a>
                             </div>
                         </div>' ;
                     }
