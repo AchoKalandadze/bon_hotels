@@ -8,7 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <?php include "./variables.php" ?>
+    <?php 
+    include "./variables.php";
+    include "./functions.php";
+    ?>
 </head>
 <body>
     <header class="header" id="header">
@@ -18,18 +21,7 @@
                 <nav>
                     <ul class="navigation">
                         <?php 
-                        foreach($headerNavContents as $elem){
-                            echo '<li class="our-hotel"><a href=" '.$elem['link'] . ' " class="nav-link"> '.$elem['text'] . ' </a>
-                            <nav>
-                                <ul class="inside-nav" id="inside-nav">';
-                            foreach ($elem['nav'] as $elem1){
-                                echo '<li><a href="#" class="nav-link">'.$elem1.'</a></li>';
-
-                            }
-                            echo '</ul>
-                            </nav>
-                        </li>' ;
-                        }
+                        makeHeader($headerNavContents);
                         ?>
                         <!-- <li class="our-hotel"><a href="#first-section" class="nav-link">Our Hotel</a>
                             <nav>
@@ -60,18 +52,8 @@
             <div class="container">
                 <h2 class="secondary-title">Rooms & Rates</h2>
                 <div class="rooms-gallery">
-                    <?php foreach($variables as $variable){
-                    
-                         echo '<div class="card">
-                            <img src="' . $variable['img'] . '" alt="' . $variable['img_alt'] . '">
-                            <div class="overlay"></div>
-                            <div class="card-content">
-                                <h3 class="card-title">' . $variable['card-title'] .  '</h3>
-                                <a href="#" class="button button-small">'. $variable['button-small'] . '</a>
-                            </div>
-                        </div>' ;
-                    }
-                        
+                    <?php 
+                        makeCards($cardsContent);
                     ?>
 
                     <!-- <div class="card">
