@@ -1,7 +1,7 @@
 <?php
 
 
-$variables = [
+$cardsContent = [
     [
         'img' => 'assets/images/1.jpg',
         'img_alt' => 'card-1',
